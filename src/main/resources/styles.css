@@ -1,0 +1,168 @@
+/* =========================
+   Global background
+   ========================= */
+.root {
+    -fx-font-family: "Segoe UI", "Inter", Arial;
+    -fx-background-color: linear-gradient(to bottom right, #0f172a, #020617);
+}
+
+/* =========================
+   Top labels
+   ========================= */
+.status-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #f8fafc;
+    -fx-padding: 8px 12px;
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+    -fx-background-radius: 14px;
+}
+
+.score-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #e2e8f0;
+    -fx-padding: 6px 12px;
+    -fx-background-color: rgba(255, 255, 255, 0.10);
+    -fx-background-radius: 14px;
+}
+
+/* =========================
+   Labels & Checkboxes
+   ========================= */
+.label {
+    -fx-text-fill: #e5e7eb;
+}
+
+.check-box {
+    -fx-text-fill: #f8fafc;
+    -fx-font-size: 13px;
+    -fx-font-weight: 600;
+}
+
+/* =========================
+   ComboBox (difficulty)
+   ========================= */
+.combo-box {
+    -fx-background-radius: 14px;
+    -fx-border-radius: 14px;
+    -fx-background-color: rgba(255, 255, 255, 0.16);
+    -fx-border-color: rgba(255, 255, 255, 0.28);
+    -fx-border-width: 1.2px;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #f8fafc;
+    -fx-background-color: transparent;
+}
+
+/* The arrow button area */
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+.combo-box .arrow {
+    -fx-background-color: #f8fafc;          /* arrow visible */
+}
+
+/* Dropdown popup background */
+.combo-box-popup .list-view {
+    -fx-background-color: #0b1220;
+    -fx-border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Dropdown items */
+.combo-box-popup .list-cell {
+    -fx-text-fill: #f8fafc;
+    -fx-background-color: transparent;
+}
+
+/* Hover + selected states in dropdown */
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+}
+.combo-box-popup .list-cell:selected {
+    -fx-background-color: rgba(255, 255, 255, 0.20);
+}
+
+/* =========================
+   Game board buttons
+   ========================= */
+.board-button {
+    -fx-font-size: 42px;
+    -fx-font-weight: 900;
+
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+
+    -fx-background-color: rgba(255, 255, 255, 0.22);
+    -fx-border-color: rgba(255, 255, 255, 0.45);
+    -fx-border-width: 1.6px;
+
+    -fx-text-fill: white;
+
+    -fx-cursor: hand;
+
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 12, 0.3, 0, 5);
+}
+
+.board-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.32);
+    -fx-border-color: rgba(255, 255, 255, 0.65);
+}
+
+.board-button:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* Disabled (AI thinking / game over) */
+.board-button:disabled {
+    -fx-opacity: 0.85;
+}
+
+/* =========================
+   X and O colors
+   ========================= */
+.x-mark {
+    -fx-text-fill: #ffffff; /* bright sky blue */
+}
+
+.o-mark {
+    -fx-text-fill: #ffffff; /* bright rose red */
+}
+
+/* =========================
+   Winning cells
+   ========================= */
+.win-cell {
+    -fx-background-color: rgba(34, 197, 94, 0.45); /* green highlight */
+    -fx-border-color: #22c55e;
+    -fx-border-width: 2.4px;
+}
+
+/* =========================
+   Bottom buttons
+   ========================= */
+.primary-button {
+    -fx-font-size: 13px;
+    -fx-font-weight: 800;
+
+    -fx-text-fill: #f8fafc;
+    -fx-background-radius: 16px;
+    -fx-padding: 10px 16px;
+
+    -fx-background-color: #2563eb; /* bright blue */
+    -fx-border-color: #60a5fa;
+    -fx-border-width: 1.4px;
+    -fx-border-radius: 16px;
+
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: #3b82f6;
+}
+
+.primary-button:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
